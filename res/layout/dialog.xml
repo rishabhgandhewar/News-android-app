@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="300dp"
+        android:scaleType="fitXY"
+        android:layout_height="190dp"
+         />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@+id/image"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="57dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:backgroundTint="@color/colorWhite"
+            android:id="@+id/twitterShareLogo"
+            android:layout_width="40dp"
+            android:scaleType="fitXY"
+            android:layout_height="40dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:longClickable="false"
+            android:src="@drawable/bluetwitter"/>
+        <View
+            android:id="@+id/separator"
+            android:layout_marginLeft="55dp"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            />
+        <ImageView
+            android:backgroundTint="@color/colorWhite"
+            android:id="@+id/bookmarkLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:clickable="false"
+            android:layout_marginLeft="53dp"
+            android:focusable="false"
+            android:longClickable="false" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <ImageView
+        android:backgroundTint="@color/colorWhite"
+        android:id="@+id/bookmarkLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:src="@drawable/detail_bookmark_filled" />
+    <ImageView
+        android:backgroundTint="@color/colorWhite"
+        android:id="@+id/twitterShareLogo"
+        android:layout_width="40dp"
+        android:scaleType="fitXY"
+        android:layout_height="40dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:src="@drawable/bluetwitter"/>
+</LinearLayout>
